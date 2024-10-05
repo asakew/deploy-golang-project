@@ -30,7 +30,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 
 ___________________
 
-## vim commands:
+## VIM Editor commands:
 - normal mode: a
 - i - insert/edit mode
 - v - visual mode
