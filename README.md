@@ -52,8 +52,8 @@ ___________________
 - gg - up line
 - G - down line
 
-https://www.youtube.com/watch?v=8KbM86FfTCQ
-https://www.youtube.com/watch?v=6H0GDM8ExB8
+https://www.youtube.com/watch?v=8KbM86FfTCQ/
+https://www.youtube.com/watch?v=6H0GDM8ExB8/
 
 ## Delete Files on Linux Terminal
 * rm file_1.txt / rm file_2.txt file_3.txt
@@ -73,4 +73,19 @@ ssh root@192.168.1.5
 sudo apt update && apt list --upgradable && sudo apt install git
 ```
 
+## Setup SSH in GitHub by example:
+Full Docs: https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/GitHub-SSH-Key-Setup-Config-Ubuntu-Linux/
+___________________
 
+## Install Golang
+```bash
+sudo apt update && apt list --upgradable && sudo snap install go  --classic && go version
+```
+
+## Ubuntu server clone Golang project
+```bash
+git clone https://github.com/asakew/deploy-golang-project.git
+```
+___________________
+
+## Install Docker
