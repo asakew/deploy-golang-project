@@ -1,14 +1,17 @@
 # deploy-golang-project / Hello Ubuntu Server
 
-## Project
+## Hello World project on Ubuntu Server
+- Standard Go Project Layout: https://github.com/golang-standards/project-layout/
 - Backend: goFiber
 - Frontend: ReactJS + Bootstrap@5.3.3
-- DockerFile + DockerCompose
+- Install Nginx Server
+- Create certbot: SSL Certificate: asakew.ru
+- DockerFile + DockerCompose: if the server restarts the container should also automatically start.
 
 ## Features
 - Deploy Golang project to Ubuntu server
 - VIM Editor
-- Install-zsh + Add Custom Theme and Auto-Suggestions/Syntax-highlighting
+- Install-zsh + Add Custom Theme + Auto-Suggestions + Syntax-highlighting
 - Git
 - Install Golang@latest version
 - Docker@latest version
