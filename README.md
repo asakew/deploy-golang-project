@@ -1,7 +1,7 @@
 # deploy-golang-project / Hello Ubuntu Server
 
 ## Connecting Ubuntu Server
-Connecting via SSH and your IP address, and your Password
+Connecting via SSH / your IP address and your Password
 ```bash
 ssh root@192.168.1.5
 ```
@@ -61,3 +61,16 @@ https://www.youtube.com/watch?v=6H0GDM8ExB8
 
 - Full Docs: https://www.howtogeek.com/409115/how-to-delete-files-and-directories-in-the-linux-terminal/
 ___________________
+
+## Repeat Connecting Ubuntu Server
+Connecting via SSH / your IP address and your Password
+```bash
+ssh root@192.168.1.5
+```
+
+## Install Git
+```bash
+sudo apt update && apt list --upgradable && sudo apt install git
+```
+
+
