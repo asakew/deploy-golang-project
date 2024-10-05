@@ -1,14 +1,15 @@
-version: '3.9'
+version: '3.8'
 
 services:
-  frontend:
-    build: ./frontend
-    ports:
-      - "80:80"
-    restart: always
-
   backend:
-    build: ./backend
+    build:
+      context: .
+      dockerfile: cmd/api/Dockerfile
     ports:
-      - "3000:3000"
-    restart: always
+      - "3001:3001"
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"
