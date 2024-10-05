@@ -1,15 +1,11 @@
 FROM golang:1.23-alpine AS builder
-
 WORKDIR /app
-
 COPY go.mod go.sum ./
 RUN go mod download
+COPY . .
+RUN go build -o server ./app/main.go
 
-COPY ./internal ./internal
-COPY ./app ./app
-
-RUN go build -o /backend ./app
-
-EXPOSE 3000
-
-CMD [ "/backend" ]
+FROM alpine:latest
+WORKDIR /root/
+COPY --from=builder /app/server .
+CMD ["./server"]
