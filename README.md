@@ -1,7 +1,9 @@
 # deploy-golang-project / Hello Ubuntu Server
 
-
-___________________
+## Project
+- Backend: goFiber
+- Frontend: ReactJS + Bootstrap@5.3.3
+- DockerFile + DockerCompose
 
 ## Features
 - Deploy Golang project to Ubuntu server
