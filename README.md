@@ -126,9 +126,12 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 
 
 ```bash
-docker build -t your-image-name . --progress=plain ## build your docker image
+docker build -t your-image-name . --progress=plain
 ```
 
+```bash
+docker compose up --build
+```
 
 ##  Install Nginx on Ubuntu Server
 ```bash
