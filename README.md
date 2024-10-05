@@ -59,7 +59,7 @@ https://www.youtube.com/watch?v=6H0GDM8ExB8/
 * rm file_1.txt / rm file_2.txt file_3.txt
 * rm ./path/to/the/file/file_1.txt
 
-- Full Docs: https://www.howtogeek.com/409115/how-to-delete-files-and-directories-in-the-linux-terminal/
+- Docs: https://www.howtogeek.com/409115/how-to-delete-files-and-directories-in-the-linux-terminal/
 ___________________
 
 ## Repeat Connecting Ubuntu Server
@@ -74,7 +74,7 @@ sudo apt update && apt list --upgradable && sudo apt install git
 ```
 
 ## Setup SSH in GitHub by example:
-Full Docs: https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/GitHub-SSH-Key-Setup-Config-Ubuntu-Linux/
+Docs: https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/GitHub-SSH-Key-Setup-Config-Ubuntu-Linux/
 ___________________
 
 ## Install Golang
@@ -88,4 +88,22 @@ git clone https://github.com/asakew/deploy-golang-project.git
 ```
 ___________________
 
-## Install Docker
+## Install Docker@latest version
+Docs: https://docs.docker.com/engine/install/ubuntu/
+
+```bash
+# Add Docker's official GPG key:
+sudo apt-get update
+sudo apt-get install ca-certificates curl
+sudo install -m 0755 -d /etc/apt/keyrings
+sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+sudo chmod a+r /etc/apt/keyrings/docker.asc
+
+# Add the repository to Apt sources:
+echo \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
+  $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
+  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+sudo apt-get update
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+```
