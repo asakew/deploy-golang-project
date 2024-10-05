@@ -1,5 +1,17 @@
 # deploy-golang-project / Hello Ubuntu Server
 
+
+___________________
+
+## Features
+- Deploy Golang project to Ubuntu server
+- VIM Editor
+- Install-zsh + Add Custom Theme and Auto-Suggestions/Syntax-highlighting
+- Git
+- Install Golang@latest version
+- Docker@latest version
+___________________
+
 ## Connecting Ubuntu Server
 Connecting via SSH / your IP address and your Password
 ```bash
@@ -11,7 +23,7 @@ ssh root@192.168.1.5
 sudo apt update && apt list --upgradable && sudo apt install zsh -y && zsh --version && sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)" 
 ```
 
-## Add a Custom Theme and Auto-Suggestions
+## Add a Custom Theme and Auto-Suggestions/Syntax-highlighting
 ### Edit file ~/.zshrc
 ```bash
 vim ~/.zshrc
@@ -27,7 +39,6 @@ vim ~/.zshrc
 ```bash
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions && git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting && sudo reboot
 ```
-
 ___________________
 
 ## VIM Editor commands:
