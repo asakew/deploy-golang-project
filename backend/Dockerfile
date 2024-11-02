@@ -20,7 +20,7 @@ RUN go build -o myapp
 FROM alpine:latest
 
 # Copy the built binary from the builder stage
-COPY --from=builder /app/myapp /myapp
+COPY --from=builder /app /myapp
 
 # Set the entry point
 ENTRYPOINT ["/myapp"]
